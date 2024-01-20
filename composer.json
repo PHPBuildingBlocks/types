@@ -2,7 +2,8 @@
   "name": "phpbuildingblocks/types",
   "description": "description",
   "minimum-stability": "stable",
-  "license": "proprietary",
+  "version": "1.0.0",
+  "license": "GPL-3.0-or-later",
   "authors": [
     {
       "name": "Niko Peikrishvili",
