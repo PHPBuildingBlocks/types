@@ -1,0 +1,22 @@
+{
+  "name": "phpbuildingblocks/types",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Niko Peikrishvili",
+      "email": "niko.peikrishvili@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "PHPBuildingBlocks\\Types\\": "src/"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^10.5",
+    "phpstan/phpstan": "^1.10",
+    "squizlabs/php_codesniffer": "*"
+  }
+}
