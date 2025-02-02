@@ -4,8 +4,14 @@ declare(strict_types=1);
 
 namespace PHPBuildingBlocks\Types\Common;
 
+use InvalidArgumentException;
+
 interface Assertable
 {
-   public function assertValid():bool;
+    /**
+     * @throws InvalidArgumentException
+     * @return void
+     */
+   public function assertValid():void;
 
 }
