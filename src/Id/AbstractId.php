@@ -5,8 +5,9 @@ declare(strict_types=1);
 namespace PHPBuildingBlocks\Types\Id;
 
 use InvalidArgumentException;
+use PHPBuildingBlocks\Types\Common\Assertable;
 
-readonly abstract class AbstractId
+readonly abstract class AbstractId implements Assertable
 {
     /**
      * @param  int|string  $id
@@ -20,11 +21,4 @@ readonly abstract class AbstractId
     {
         return $this->id;
     }
-
-    /**
-     * @return void
-     *
-     * @throws InvalidArgumentException
-     */
-    abstract protected function assertValid(): void;
 }

@@ -12,7 +12,7 @@ readonly class IntId extends AbstractId
      /**
      * @inheritDoc
      */
-    protected function assertValid(): void
+    public function assertValid(): void
     {
         if(!is_int($this->id)){
             throw new InvalidIdException('Id is not an integer');

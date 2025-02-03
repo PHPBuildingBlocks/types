@@ -5,9 +5,10 @@ declare(strict_types=1);
 namespace PHPBuildingBlocks\Types\Email;
 
 
+use PHPBuildingBlocks\Types\Common\Assertable;
 use PHPBuildingBlocks\Types\Email\Exceptions\InvalidEmailException;
 
-abstract readonly class AbstractEmail
+abstract readonly class AbstractEmail implements Assertable
 {
     public function __construct(protected string $email)
     {
@@ -21,10 +22,4 @@ abstract readonly class AbstractEmail
     {
         return $this->email;
     }
-
-    /**
-     * @return void
-     * @throws InvalidEmailException
-     */
-    abstract public function assertValid(): void;
 }
