@@ -10,9 +10,9 @@ readonly abstract class AbstractName
   {
   }
 
-  protected function value(): string
+  public function value(): string
   {
-
+        return $this->name;
   }
 
 

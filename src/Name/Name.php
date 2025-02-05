@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace PHPBuildingBlocks\Types\Name;
 
-class Name
+readonly class Name extends AbstractName
 {
 
 }
