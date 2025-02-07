@@ -10,7 +10,7 @@ abstract class AbstractLastName implements Assertable
 {
     public function __construct(protected readonly string $lastName)
     {
-
+        $this->assertValid();
     }
 
     public function value(): string {

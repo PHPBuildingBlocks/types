@@ -19,5 +19,8 @@
     "phpunit/phpunit": "^10.5",
     "phpstan/phpstan": "^1.10",
     "squizlabs/php_codesniffer": "*"
+  },
+  "require": {
+    "ext-ctype": "*"
   }
 }

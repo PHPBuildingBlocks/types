@@ -4,9 +4,7 @@ declare(strict_types=1);
 
 namespace PHPBuildingBlocks\Types\LastName;
 
-use PHPBuildingBlocks\Types\LastName\AbstractLastName;
 use PHPBuildingBlocks\Types\LastName\Exceptions\InvalidLastNameException;
-use PHPBuildingBlocks\Types\Name\InvalidNameException;
 
 class LastName extends AbstractLastName
 {
